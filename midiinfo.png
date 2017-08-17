@@ -1,0 +1,22 @@
+echo 'Subiendo a BasketBuild...'
+echo '-------------------------'
+echo '                         '
+ROMDIR='out/target/product/*'
+HOST='basketbuild.com' 
+USER="eldainosor.basketbuild.com" 
+read FOLDID
+FILE=*2017*zip
+REMOTEPATH='/ROMs/snare'
+HECKING=$EASE$MY$MIND
+cd $ROMDIR
+ftp -n -p $HOST <<END_SCRIPT 
+quote USER $USER 
+quote PASS $HECKING
+cd $REMOTEPATH 
+put $FILE 
+quit 
+END_SCRIPT
+cd ../../../..
+echo 'Archivo subido a BB con éxito.'
+echo '                              '
+echo 'Está en el snare folder'

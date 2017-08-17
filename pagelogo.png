@@ -1,0 +1,22 @@
+echo 'Subiendo a RR Website...'
+echo '------------------------'
+DONT='rrho'
+ROMDIR='out/target/product/*'
+HOST='downloads.resurrectionremix.com'
+USER="maintainers"
+FILE=*2017*zip
+REMOTEPATH='/downloads.resurrectionremix.com/surnia'
+STOP='sting'
+HECKING=$DONT$STOP
+cd ~/$ROMDIR
+ftp -n $HOST <<END_SCRIPT
+quote USER $USER
+quote PASS $HECKING
+cd $REMOTEPATH
+put $FILE
+quit
+END_SCRIPT
+echo 'Archivo subido al sourceforge de RR con éxito.'
+cd ../../../..
+echo '                              '
+echo 'El link directo es facil, lastima que no lo tengo a mano lol'
