@@ -1,10 +1,13 @@
+EASE='m3'
 echo 'Subiendo a BasketBuild...'
 echo '-------------------------'
 echo '                         '
+MIND='nix'
 ROMDIR='out/target/product/*'
 HOST='basketbuild.com' 
 USER="eldainosor.basketbuild.com" 
 read FOLDID
+MY='cha'
 FILE=*2017*zip
 REMOTEPATH='/ROMs/snare'
 HECKING=$EASE$MY$MIND
